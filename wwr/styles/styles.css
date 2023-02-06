@@ -1,0 +1,52 @@
+a {
+    text-decoration: none;
+}
+
+h2 {
+    color: #272635;
+    font-size: 32px;
+}
+
+img {
+    max-width: 100%;
+}
+
+#content {
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+header nav,
+#hero,
+main section {
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+}
+
+nav {
+    background-color: #5d5c67;
+}
+
+nav a {
+    color: #fff;
+}
+
+nav a:hover {
+    background-color: #b1e5f2;
+    color: #272635;
+}
+
+#logo_link:hover {
+    background-color: transparent;
+}
+
+.logo {
+    width: 80px;
+}
+
+.icon img {
+    width: 40px;
+}
