@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Sofia+Sans&family=Ubuntu+Condensed&display=swap');
+
+body {
+    font-family: 'Sofia Sans', 'Ubuntu Condensed', Arial, Helvetica, sans-serif;
+}
+
 a {
     text-decoration: none;
 }
@@ -28,15 +34,22 @@ main section {
 
 nav {
     background-color: #5d5c67;
+    padding: 20px 0;
 }
 
 nav a {
     color: #fff;
+    padding: 20px 40px;
 }
 
 nav a:hover {
     background-color: #b1e5f2;
     color: #272635;
+}
+
+#logo_link {
+    margin-right: 20px;
+    padding: 0;
 }
 
 #logo_link:hover {
@@ -49,4 +62,13 @@ nav a:hover {
 
 .icon img {
     width: 40px;
+}
+
+.home-title {
+    font-family: 'Courgette';
+    font-size: 48px;
+}
+
+.home-grid img {
+    border: 2px solid #e8e9f3;
 }
