@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Sofia+Sans&family=Ubuntu+Condensed&display=swap');
+@import url('header.css');
+@import url('hero.css');
+@import url('main.css');
+@import url('footer.css');
 
 body {
     font-family: 'Sofia Sans', 'Ubuntu Condensed', Arial, Helvetica, sans-serif;
@@ -22,44 +26,6 @@ img {
     max-width: 1600px;
 }
 
-header nav,
-#hero,
-main section {
-    text-align: center;
-}
-
-#background {
-    height: 725px;
-}
-
-nav {
-    background-color: #5d5c67;
-    padding: 20px 0;
-}
-
-nav a {
-    color: #fff;
-    padding: 20px 40px;
-}
-
-nav a:hover {
-    background-color: #b1e5f2;
-    color: #272635;
-}
-
-#logo_link {
-    margin-right: 20px;
-    padding: 0;
-}
-
-#logo_link:hover {
-    background-color: transparent;
-}
-
-.logo {
-    width: 80px;
-}
-
 .icon img {
     width: 40px;
 }
@@ -71,4 +37,46 @@ nav a:hover {
 
 .home-grid img {
     border: 2px solid #e8e9f3;
+}
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
 }
