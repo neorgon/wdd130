@@ -19,3 +19,8 @@
 #hero-msg h4 {
     color: white;
 }
+
+.hero-image img {
+    min-width: 100%;
+    min-height: 100%
+}

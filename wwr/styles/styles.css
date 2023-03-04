@@ -79,4 +79,9 @@ img {
     footer {
         margin-top: 25px;
     }
+
+    .right-text a,
+    .left-text a {
+        position: relative;
+    }
 }
