@@ -1,5 +1,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@300&display=swap');
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
-    font-family: 'Montserrat', 'Oswald';
+    font-family: 'Montserrat';
+    margin: 0 auto;
+}
+
+a {
+    font-family: 'Oswald';
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+header,
+main,
+footer > div {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+}
+
+nav a {
+    color: #181a1e;
+    font-size: 19px;
+    padding: 0 40px;
+}
+
+nav a:last-child {
+    padding-right: 0;
+}
+
+nav a:hover {
+    color: #355675;
+    text-decoration: underline;
+}
+
+.hero {
+    margin-bottom: 20px;
+}
+
+.hero img {
+    min-height: 70%;
+    min-width: 100%;
+}
+
+main {
+    column-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    row-gap: 20px;
+}
+
+main a {
+    color: #181a1e;
+}
+
+main a:hover {
+    color: #355675
+}
+
+footer {
+    background-color: #355675;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.nav-footer,
+.social-media {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.nav-footer a {
+    color: #ccc;
+    padding: 0 20px;
+}
+
+.nav-footer a:hover,
+.social-media a:hover {
+    color: #fff;
+}
+
+.social-media {
+    display: grid;
+    grid-template-columns: 25% repeat(5, 1fr) 25%;
+}
+
+.social-media a {
+    color: #ccc;
+}
+
+.copy {
+    font-weight: 700;
+    padding: 20px 0;
+    text-align: center;
 }
