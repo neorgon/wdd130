@@ -74,12 +74,89 @@ main {
     row-gap: 20px;
 }
 
+.list {
+    display: block;
+}
+
 main a {
     color: #181a1e;
 }
 
 main a:hover {
     color: #355675
+}
+
+.restaurants {
+    margin: 20px 0;
+}
+
+.search {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.search input {
+    font-family: 'Montserrat';
+    border: none;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.filter {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 6px;
+}
+
+.filter:focus {
+    outline: none;
+}
+
+.restaurants img {
+    border: 1px solid #355675;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.restaurants article {
+    margin-bottom: 40px;
+}
+
+.restaurants article {
+    column-gap: 20px;
+    display: grid;
+    grid-template-columns: 330px 1fr;
+}
+
+.restaurants .reverse {
+    column-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 330px;
+}
+
+.restaurants h3 {
+    margin-top: 0;
+}
+
+.description {
+    position: relative;
+}
+
+.description > div {
+    bottom: 0;
+    position: absolute;
+}
+
+.description > div a {
+    padding: 0 20px;
+}
+
+.description > div a:first-child {
+    padding-left: 0;
 }
 
 footer {
