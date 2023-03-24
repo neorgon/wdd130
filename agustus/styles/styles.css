@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@300&display=swap');
+@import url('slides.css');
 
-html {
-    box-sizing: border-box;
+* {
+    box-sizing:border-box
 }
 
 *,
